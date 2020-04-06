@@ -1,0 +1,71 @@
+body{
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+h1{
+    margin-top: -50px;
+}
+.container{
+    position: relative;
+}
+.legend {
+    font-size: 12px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+  .legend .text {
+    position: relative;
+    padding-right: 25px;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .legend .box {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -3px;
+    right: 0;
+  }
+  .legend .box.yellowgreen {
+    background-color: yellowgreen;
+  }
+  
+  .legend .box.firebrick {
+    background-color: firebrick;
+  }
+
+.tooltip {
+    background-color: #eaeaea;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    display: none;
+    font-size: 14px;
+    position: absolute;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .tooltip.show {
+    display: block;
+  }
+  
+  .tooltip p {
+    margin: 5px;
+  }
+  
+  .tooltip small {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
